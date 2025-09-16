@@ -1,0 +1,25 @@
+{
+  "name": "desafioaccenture",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nikolascapucci/DesafioAccenture.git"
+  },
+  "keywords": [],
+  "author": "Nikolas Capucci",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/nikolascapucci/DesafioAccenture/issues"
+  },
+  "homepage": "https://github.com/nikolascapucci/DesafioAccenture#readme",
+  "devDependencies": {
+    "@cucumber/cucumber": "^12.2.0",
+    "@playwright/test": "^1.55.0"
+  }
+}
