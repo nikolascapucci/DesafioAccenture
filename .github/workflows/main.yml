@@ -1,0 +1,80 @@
+name: Cypress E2E Tests
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  # Job principal que executa os testes em paralelo
+  cypress-run:
+    runs-on: ubuntu-latest
+    # Define uma matriz de execução para paralelizar os testes em 3 containers
+    strategy:
+      fail-fast: false
+      matrix:
+        containers: 
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Run Cypress tests
+        # Utiliza a action oficial do Cypress para simplificar a configuração
+        uses: cypress-io/github-action@v6
+        with:
+          # Inicia a aplicação (se necessário) antes dos testes
+          # start: npm start
+          # wait-on: 'http://localhost:3000'
+          browser: chrome
+          # Ativa a gravação para o Cypress Cloud (opcional, requer configuração de projectId e record key)
+          # record: true
+          # Ativa a paralelização
+          parallel: true
+        env:
+          # Token do GitHub para integração com o Cypress Cloud
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # Chave de gravação do Cypress Cloud (armazenada como um secret no GitHub)
+          # CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
+          
+      - name: Upload Mochawesome reports as artifacts
+        # Salva os relatórios JSON de cada container como artefatos
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: mochawesome-report-${{ matrix.containers }}
+          path: cypress/reports/html/*.json
+          retention-days: 1
+
+  # Job para unificar os relatórios após a conclusão dos testes paralelos
+  merge-reports:
+    # Este job só roda após todos os jobs 'cypress-run' terem sido concluídos com sucesso ou falha
+    needs: cypress-run
+    if: always()
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Download all Mochawesome reports
+        uses: actions/download-artifact@v4
+        with:
+          path: all-mochawesome-reports
+          pattern: mochawesome-report-*
+          merge-multiple: true
+
+      - name: Install dependencies for merging
+        run: npm install mochawesome-merge
+
+      - name: Merge reports
+        # Usa mochawesome-merge para combinar todos os relatórios JSON em um único arquivo
+        run: npx mochawesome-merge "all-mochawesome-reports/**/*.json" > final-report.json
+
+      - name: Upload final merged report
+        uses: actions/upload-artifact@v4
+        with:
+          name: final-mochawesome-report
+          path: final-report.json
+          retention-days: 7
