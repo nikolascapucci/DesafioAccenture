@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.13.7 on win32)" generated="2025-09-18T00:23:07.104695" rpa="false" schemaversion="5">
+<suite id="s1" name="DesafioAccenture" source="C:\Users\nikol\OneDrive\Documentos\Repositórios\DesafioAccenture">
+<suite id="s1-s1" name="Tests" source="C:\Users\nikol\OneDrive\Documentos\Repositórios\DesafioAccenture\tests">
+<suite id="s1-s1-s1" name="Stage4 WebTables" source="C:\Users\nikol\OneDrive\Documentos\Repositórios\DesafioAccenture\tests\Stage4_WebTables.robot">
+<kw name="Open DemoQA" owner="Common" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-09-18T00:23:07.450083" level="INFO">Opening browser 'chrome' to base url 'https://demoqa.com'.</msg>
+<arg>${BASE_URL}${path}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-09-18T00:23:07.449639" elapsed="6.301284"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-09-18T00:23:13.751368" elapsed="0.055842"/>
+</kw>
+<status status="PASS" start="2025-09-18T00:23:07.448524" elapsed="6.359021"/>
+</kw>
+<test id="s1-s1-s1-t1" name="Etapa 4 - CRUD na Web Table" line="12">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-09-18T00:23:13.812481" level="INFO">Opening url 'https://demoqa.com'</msg>
+<arg>${BASE_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-09-18T00:23:13.811670" elapsed="0.743729"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${ELEMENTS_CARD}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-09-18T00:23:14.558102" elapsed="0.049135"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-09-18T00:23:14.608258" level="INFO">Clicking element 'xpath=//div[@class="card-body"]/h5[normalize-space(.)="Elements"]/ancestor::div[contains(@class,"card")]'.</msg>
+<arg>${ELEMENTS_CARD}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-18T00:23:14.607828" elapsed="0.208572"/>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-09-18T00:23:14.970720" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-105.png"&gt;&lt;img src="selenium-screenshot-105.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-09-18T00:23:14.971052" level="FAIL">Element with locator 'xpath=//*[contains(text(),"Web Tables")]/ancestor::li[contains(@class,"element-group")]' not found.</msg>
+<arg>${WEBTABLES_MENU}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="FAIL" start="2025-09-18T00:23:14.817774" elapsed="0.169981">Element with locator 'xpath=//*[contains(text(),"Web Tables")]/ancestor::li[contains(@class,"element-group")]' not found.</status>
+</kw>
+<msg time="2025-09-18T00:23:14.988148" level="INFO">${expanded} = False</msg>
+<var>${expanded}</var>
+<arg>Element Should Be Visible</arg>
+<arg>${WEBTABLES_MENU}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2025-09-18T00:23:14.817140" elapsed="0.171310"/>
+</kw>
+<if>
+<branch type="IF" condition="'${expanded}' == 'False'">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-09-18T00:23:14.991491" level="INFO">Clicking element 'xpath=//div[@class="card-body"]/h5[normalize-space(.)="Elements"]/ancestor::div[contains(@class,"card")]'.</msg>
+<msg time="2025-09-18T00:23:15.185319" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-106.png"&gt;&lt;img src="selenium-screenshot-106.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-09-18T00:23:15.185707" level="FAIL">Element with locator 'xpath=//div[@class="card-body"]/h5[normalize-space(.)="Elements"]/ancestor::div[contains(@class,"card")]' not found.</msg>
+<arg>${ELEMENTS_CARD}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2025-09-18T00:23:14.991036" elapsed="0.205588">Element with locator 'xpath=//div[@class="card-body"]/h5[normalize-space(.)="Elements"]/ancestor::div[contains(@class,"card")]' not found.</status>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${WEBTABLES_MENU}</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2025-09-18T00:23:15.196878" elapsed="0.000330"/>
+</kw>
+<status status="FAIL" start="2025-09-18T00:23:14.990457" elapsed="0.206907">Element with locator 'xpath=//div[@class="card-body"]/h5[normalize-space(.)="Elements"]/ancestor::div[contains(@class,"card")]' not found.</status>
+</branch>
+<status status="FAIL" start="2025-09-18T00:23:14.990370" elapsed="0.207078">Element with locator 'xpath=//div[@class="card-body"]/h5[normalize-space(.)="Elements"]/ancestor::div[contains(@class,"card")]' not found.</status>
+</if>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${WEBTABLES_MENU}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-09-18T00:23:15.198354" elapsed="0.000335"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${ADD_BUTTON}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2025-09-18T00:23:15.199034" elapsed="0.000354"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${ADD_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-09-18T00:23:15.199799" elapsed="0.000326"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${FIRST_NAME}</arg>
+<arg>${FIRST}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-09-18T00:23:15.200472" elapsed="0.000407"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${LAST_NAME}</arg>
+<arg>${LAST}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-09-18T00:23:15.201628" elapsed="0.000645"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${AGE}</arg>
+<arg>30</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-09-18T00:23:15.202748" elapsed="0.000316"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${EMAIL}</arg>
+<arg>test@example.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-09-18T00:23:15.203352" elapsed="0.000291"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${SALARY}</arg>
+<arg>2000</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-09-18T00:23:15.203940" elapsed="0.000311"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${DEPARTMENT}</arg>
+<arg>QA</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-09-18T00:23:15.204545" elapsed="0.000331"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${SUBMIT_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-09-18T00:23:15.205164" elapsed="0.000293"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath=//div[text()="${FIRST}"]/ancestor::div[contains(@class,'rt-tr-group')]//span[@title='Edit']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-09-18T00:23:15.205724" elapsed="0.000275"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${SALARY}</arg>
+<arg>5000</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-09-18T00:23:15.206265" elapsed="0.000279"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${SUBMIT_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-09-18T00:23:15.207155" elapsed="0.000374"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath=//div[text()="${FIRST}"]/ancestor::div[contains(@class,'rt-tr-group')]//span[@title='Delete']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-09-18T00:23:15.207869" elapsed="0.000334"/>
+</kw>
+<status status="FAIL" start="2025-09-18T00:23:13.807762" elapsed="1.400834">Element with locator 'xpath=//div[@class="card-body"]/h5[normalize-space(.)="Elements"]/ancestor::div[contains(@class,"card")]' not found.</status>
+</test>
+<kw name="Close Browser Safe" owner="Common" type="TEARDOWN">
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-09-18T00:23:15.246550" elapsed="2.223030"/>
+</kw>
+<arg>Close Browser</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="PASS" start="2025-09-18T00:23:15.245961" elapsed="2.223772"/>
+</kw>
+<status status="PASS" start="2025-09-18T00:23:15.244665" elapsed="2.225165"/>
+</kw>
+<status status="FAIL" start="2025-09-18T00:23:07.150312" elapsed="10.319574"/>
+</suite>
+<status status="FAIL" start="2025-09-18T00:23:07.135915" elapsed="10.340202"/>
+</suite>
+<status status="FAIL" start="2025-09-18T00:23:07.112066" elapsed="10.376624"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="DesafioAccenture" id="s1" pass="0" fail="1" skip="0">DesafioAccenture</stat>
+<stat name="Tests" id="s1-s1" pass="0" fail="1" skip="0">DesafioAccenture.Tests</stat>
+<stat name="Stage4 WebTables" id="s1-s1-s1" pass="0" fail="1" skip="0">DesafioAccenture.Tests.Stage4 WebTables</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

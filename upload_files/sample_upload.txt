@@ -1,0 +1,2 @@
+Este é um arquivo de upload de teste.
+Gerado para o desafio DemoQA.

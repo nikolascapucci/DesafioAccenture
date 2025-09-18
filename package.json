@@ -1,0 +1,11 @@
+{
+  "name": "demoqa-robot-browser",
+  "version": "1.0.0",
+  "scripts": {
+    "rf:install": "pip install -r requirements.txt",
+    "rf:run": "robot -d results tests"
+  },
+  "devDependencies": {
+    "playwright": "^1.40.0"
+  }
+}

@@ -1,0 +1,199 @@
+{"level":30,"time":"2025-09-17T03:37:02.302Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"Listening on 127.0.0.1:53043"}
+(node:49208) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+{"level":30,"time":"2025-09-17T03:37:02.442Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2025-09-17T03:37:02.860Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"Adding browser to stack: chromium, version: 140.0.7339.16"}
+{"level":30,"time":"2025-09-17T03:37:02.861Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"End of node method newBrowser"}
+{"level":30,"time":"2025-09-17T03:37:02.861Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2025-09-17T03:37:02.867Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"Start of node method newContext"}
+{"level":30,"time":"2025-09-17T03:37:02.867Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"Creating new context with options: {\"acceptDownloads\":true,\"bypassCSP\":false,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":false,\"javaScriptEnabled\":true,\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"viewport\":{\"height\":720,\"width\":1280}}"}
+{"level":30,"time":"2025-09-17T03:37:02.867Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@af0b51c76e50aa87e6972a25d731e9f0\"},\"headless\":false,\"_contextStack\":[],\"id\":\"browser=0189e0b4-d1fe-4423-9c58-e89484e1901d\"}"}
+{"level":30,"time":"2025-09-17T03:37:02.867Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"Trace file: "}
+{"level":30,"time":"2025-09-17T03:37:02.877Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"Setting default timeout for context context=5eed0a02-0363-4cd3-98b8-8bd3f72bd002 to 10000"}
+{"level":30,"time":"2025-09-17T03:37:02.877Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"End of node method newContext"}
+{"level":30,"time":"2025-09-17T03:37:02.877Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"Changed active context: context=5eed0a02-0363-4cd3-98b8-8bd3f72bd002"}
+{"level":30,"time":"2025-09-17T03:37:02.882Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-09-17T03:37:02.882Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@af0b51c76e50aa87e6972a25d731e9f0\"},\"headless\":false,\"_contextStack\":[{\"id\":\"context=5eed0a02-0363-4cd3-98b8-8bd3f72bd002\",\"c\":{\"_type\":\"BrowserContext\",\"_guid\":\"browser-context@9194ee151714214a297cfa4ce4a4ae5d\"},\"pageStack\":[],\"options\":{\"acceptDownloads\":true,\"bypassCSP\":false,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":false,\"javaScriptEnabled\":true,\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"viewport\":{\"height\":720,\"width\":1280}},\"traceFile\":\"\"}],\"id\":\"browser=0189e0b4-d1fe-4423-9c58-e89484e1901d\"}"}
+{"level":30,"time":"2025-09-17T03:37:03.100Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"Video path: undefined"}
+{"level":30,"time":"2025-09-17T03:37:03.100Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"Changed active page"}
+{"level":30,"time":"2025-09-17T03:37:10.088Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"End of node method newPage"}
+{"level":30,"time":"2025-09-17T03:37:10.095Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-09-17T03:37:10.100Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-09-17T03:37:10.104Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-09-17T03:37:10.105Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-09-17T03:37:10.109Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"Start of node method closeBrowser"}
+{"level":30,"time":"2025-09-17T03:37:10.122Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"Removed page=fe618a4a-8223-4adb-9b02-d9c48752deaf from context=5eed0a02-0363-4cd3-98b8-8bd3f72bd002 page stack"}
+{"level":30,"time":"2025-09-17T03:37:15.012Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"End of node method closeBrowser"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\Users\nikol\AppData\Roaming\Python\Python313\site-packages\Browser\wrapper\index.js:12227:15)
+    at PlaywrightServer.getActiveBrowser (C:\Users\nikol\AppData\Roaming\Python\Python313\site-packages\Browser\wrapper\index.js:13124:59)
+    at PlaywrightServer.setTimeout (C:\Users\nikol\AppData\Roaming\Python\Python313\site-packages\Browser\wrapper\index.js:13372:57)
+    at Object.onReceiveHalfClose (C:\Users\nikol\AppData\Roaming\Python\Python313\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1461:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\nikol\AppData\Roaming\Python\Python313\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:575:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\nikol\AppData\Roaming\Python\Python313\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:615:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\nikol\AppData\Roaming\Python\Python313\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:382:18)
+    at ServerHttp2Stream.emit (node:events:531:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+=============================================================
+{"level":30,"time":"2025-09-17T03:37:15.017Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-09-17T03:37:15.017Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-09-17T03:37:15.024Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-09-17T03:37:15.024Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-09-17T03:37:15.028Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2025-09-17T03:37:15.250Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"Adding browser to stack: chromium, version: 140.0.7339.16"}
+{"level":30,"time":"2025-09-17T03:37:15.250Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"End of node method newBrowser"}
+{"level":30,"time":"2025-09-17T03:37:15.250Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2025-09-17T03:37:15.254Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"Start of node method newContext"}
+{"level":30,"time":"2025-09-17T03:37:15.254Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"Creating new context with options: {\"acceptDownloads\":true,\"bypassCSP\":false,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":false,\"javaScriptEnabled\":true,\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"viewport\":{\"height\":720,\"width\":1280}}"}
+{"level":30,"time":"2025-09-17T03:37:15.254Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@578b537176032fd6629f0216a354527b\"},\"headless\":false,\"_contextStack\":[],\"id\":\"browser=2596b81c-17e6-4b05-854f-f51644092ac4\"}"}
+{"level":30,"time":"2025-09-17T03:37:15.254Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"Trace file: "}
+{"level":30,"time":"2025-09-17T03:37:15.260Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"Setting default timeout for context context=30fd8ef3-c6c9-4fa1-9bac-fbf7f49c1288 to 10000"}
+{"level":30,"time":"2025-09-17T03:37:15.260Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"End of node method newContext"}
+{"level":30,"time":"2025-09-17T03:37:15.260Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"Changed active context: context=30fd8ef3-c6c9-4fa1-9bac-fbf7f49c1288"}
+{"level":30,"time":"2025-09-17T03:37:15.263Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-09-17T03:37:15.263Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@578b537176032fd6629f0216a354527b\"},\"headless\":false,\"_contextStack\":[{\"id\":\"context=30fd8ef3-c6c9-4fa1-9bac-fbf7f49c1288\",\"c\":{\"_type\":\"BrowserContext\",\"_guid\":\"browser-context@b81f8b9f14ab74081ccbdd860999b5a3\"},\"pageStack\":[],\"options\":{\"acceptDownloads\":true,\"bypassCSP\":false,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":false,\"javaScriptEnabled\":true,\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"viewport\":{\"height\":720,\"width\":1280}},\"traceFile\":\"\"}],\"id\":\"browser=2596b81c-17e6-4b05-854f-f51644092ac4\"}"}
+{"level":30,"time":"2025-09-17T03:37:15.422Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"Video path: undefined"}
+{"level":30,"time":"2025-09-17T03:37:15.422Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"Changed active page"}
+{"level":30,"time":"2025-09-17T03:37:19.749Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"End of node method newPage"}
+{"level":30,"time":"2025-09-17T03:37:19.754Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-09-17T03:37:19.760Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-09-17T03:37:19.766Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-09-17T03:37:19.768Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-09-17T03:37:19.772Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"Start of node method closeBrowser"}
+{"level":30,"time":"2025-09-17T03:37:19.788Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"Removed page=e61e81dd-a1f2-41b2-b587-ee3a38734ebd from context=30fd8ef3-c6c9-4fa1-9bac-fbf7f49c1288 page stack"}
+{"level":30,"time":"2025-09-17T03:37:21.484Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"End of node method closeBrowser"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\Users\nikol\AppData\Roaming\Python\Python313\site-packages\Browser\wrapper\index.js:12227:15)
+    at PlaywrightServer.getActiveBrowser (C:\Users\nikol\AppData\Roaming\Python\Python313\site-packages\Browser\wrapper\index.js:13124:59)
+    at PlaywrightServer.setTimeout (C:\Users\nikol\AppData\Roaming\Python\Python313\site-packages\Browser\wrapper\index.js:13372:57)
+    at Object.onReceiveHalfClose (C:\Users\nikol\AppData\Roaming\Python\Python313\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1461:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\nikol\AppData\Roaming\Python\Python313\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:575:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\nikol\AppData\Roaming\Python\Python313\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:615:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\nikol\AppData\Roaming\Python\Python313\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:382:18)
+    at ServerHttp2Stream.emit (node:events:531:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+=============================================================
+{"level":30,"time":"2025-09-17T03:37:21.487Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-09-17T03:37:21.487Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-09-17T03:37:21.493Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-09-17T03:37:21.494Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-09-17T03:37:21.499Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2025-09-17T03:37:21.733Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"Adding browser to stack: chromium, version: 140.0.7339.16"}
+{"level":30,"time":"2025-09-17T03:37:21.733Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"End of node method newBrowser"}
+{"level":30,"time":"2025-09-17T03:37:21.733Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2025-09-17T03:37:21.737Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"Start of node method newContext"}
+{"level":30,"time":"2025-09-17T03:37:21.737Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"Creating new context with options: {\"acceptDownloads\":true,\"bypassCSP\":false,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":false,\"javaScriptEnabled\":true,\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"viewport\":{\"height\":720,\"width\":1280}}"}
+{"level":30,"time":"2025-09-17T03:37:21.737Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@3a1aa5b7a18170742a53585e9293f1eb\"},\"headless\":false,\"_contextStack\":[],\"id\":\"browser=7ad193f2-9e54-4c78-8121-e70ab466278c\"}"}
+{"level":30,"time":"2025-09-17T03:37:21.738Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"Trace file: "}
+{"level":30,"time":"2025-09-17T03:37:21.743Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"Setting default timeout for context context=4c51d999-e1dd-4ed8-9798-9decb07a793b to 10000"}
+{"level":30,"time":"2025-09-17T03:37:21.743Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"End of node method newContext"}
+{"level":30,"time":"2025-09-17T03:37:21.743Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"Changed active context: context=4c51d999-e1dd-4ed8-9798-9decb07a793b"}
+{"level":30,"time":"2025-09-17T03:37:21.746Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-09-17T03:37:21.746Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@3a1aa5b7a18170742a53585e9293f1eb\"},\"headless\":false,\"_contextStack\":[{\"id\":\"context=4c51d999-e1dd-4ed8-9798-9decb07a793b\",\"c\":{\"_type\":\"BrowserContext\",\"_guid\":\"browser-context@494d1582b3dd93fe57ec458d62cd7788\"},\"pageStack\":[],\"options\":{\"acceptDownloads\":true,\"bypassCSP\":false,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":false,\"javaScriptEnabled\":true,\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"viewport\":{\"height\":720,\"width\":1280}},\"traceFile\":\"\"}],\"id\":\"browser=7ad193f2-9e54-4c78-8121-e70ab466278c\"}"}
+{"level":30,"time":"2025-09-17T03:37:21.905Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"Video path: undefined"}
+{"level":30,"time":"2025-09-17T03:37:21.905Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"Changed active page"}
+{"level":30,"time":"2025-09-17T03:37:27.566Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"End of node method newPage"}
+{"level":30,"time":"2025-09-17T03:37:27.570Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-09-17T03:37:27.574Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-09-17T03:37:27.577Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-09-17T03:37:27.579Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-09-17T03:37:27.585Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"Start of node method closeBrowser"}
+{"level":30,"time":"2025-09-17T03:37:27.598Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"Removed page=384bd254-f29f-4a2d-adc6-92f11e6428f3 from context=4c51d999-e1dd-4ed8-9798-9decb07a793b page stack"}
+{"level":30,"time":"2025-09-17T03:37:29.943Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"End of node method closeBrowser"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\Users\nikol\AppData\Roaming\Python\Python313\site-packages\Browser\wrapper\index.js:12227:15)
+    at PlaywrightServer.getActiveBrowser (C:\Users\nikol\AppData\Roaming\Python\Python313\site-packages\Browser\wrapper\index.js:13124:59)
+    at PlaywrightServer.setTimeout (C:\Users\nikol\AppData\Roaming\Python\Python313\site-packages\Browser\wrapper\index.js:13372:57)
+    at Object.onReceiveHalfClose (C:\Users\nikol\AppData\Roaming\Python\Python313\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1461:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\nikol\AppData\Roaming\Python\Python313\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:575:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\nikol\AppData\Roaming\Python\Python313\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:615:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\nikol\AppData\Roaming\Python\Python313\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:382:18)
+    at ServerHttp2Stream.emit (node:events:531:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+=============================================================
+{"level":30,"time":"2025-09-17T03:37:29.946Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-09-17T03:37:29.946Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-09-17T03:37:29.952Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-09-17T03:37:29.952Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-09-17T03:37:29.954Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2025-09-17T03:37:30.211Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"Adding browser to stack: chromium, version: 140.0.7339.16"}
+{"level":30,"time":"2025-09-17T03:37:30.211Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"End of node method newBrowser"}
+{"level":30,"time":"2025-09-17T03:37:30.211Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2025-09-17T03:37:30.215Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"Start of node method newContext"}
+{"level":30,"time":"2025-09-17T03:37:30.215Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"Creating new context with options: {\"acceptDownloads\":true,\"bypassCSP\":false,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":false,\"javaScriptEnabled\":true,\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"viewport\":{\"height\":720,\"width\":1280}}"}
+{"level":30,"time":"2025-09-17T03:37:30.215Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@2e21473528cd609913ef1df335f41f9c\"},\"headless\":false,\"_contextStack\":[],\"id\":\"browser=9e425891-ff00-4c68-97b1-31372d0f3ae0\"}"}
+{"level":30,"time":"2025-09-17T03:37:30.215Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"Trace file: "}
+{"level":30,"time":"2025-09-17T03:37:30.220Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"Setting default timeout for context context=8aa05b45-d7ae-4fd0-9fda-1d2fcf9d7981 to 10000"}
+{"level":30,"time":"2025-09-17T03:37:30.220Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"End of node method newContext"}
+{"level":30,"time":"2025-09-17T03:37:30.220Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"Changed active context: context=8aa05b45-d7ae-4fd0-9fda-1d2fcf9d7981"}
+{"level":30,"time":"2025-09-17T03:37:30.224Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-09-17T03:37:30.224Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@2e21473528cd609913ef1df335f41f9c\"},\"headless\":false,\"_contextStack\":[{\"id\":\"context=8aa05b45-d7ae-4fd0-9fda-1d2fcf9d7981\",\"c\":{\"_type\":\"BrowserContext\",\"_guid\":\"browser-context@38f3f34ac202832a92310d72ad23bf54\"},\"pageStack\":[],\"options\":{\"acceptDownloads\":true,\"bypassCSP\":false,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":false,\"javaScriptEnabled\":true,\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"viewport\":{\"height\":720,\"width\":1280}},\"traceFile\":\"\"}],\"id\":\"browser=9e425891-ff00-4c68-97b1-31372d0f3ae0\"}"}
+{"level":30,"time":"2025-09-17T03:37:30.383Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"Video path: undefined"}
+{"level":30,"time":"2025-09-17T03:37:30.383Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"Changed active page"}
+{"level":30,"time":"2025-09-17T03:37:34.909Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"End of node method newPage"}
+{"level":30,"time":"2025-09-17T03:37:34.913Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-09-17T03:37:34.918Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-09-17T03:37:34.924Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-09-17T03:37:34.925Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-09-17T03:37:34.929Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"Start of node method closeBrowser"}
+{"level":30,"time":"2025-09-17T03:37:34.939Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"Removed page=418a3ab4-264b-46f6-87dd-6e3ae44d9d73 from context=8aa05b45-d7ae-4fd0-9fda-1d2fcf9d7981 page stack"}
+{"level":30,"time":"2025-09-17T03:37:36.937Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"End of node method closeBrowser"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\Users\nikol\AppData\Roaming\Python\Python313\site-packages\Browser\wrapper\index.js:12227:15)
+    at PlaywrightServer.getActiveBrowser (C:\Users\nikol\AppData\Roaming\Python\Python313\site-packages\Browser\wrapper\index.js:13124:59)
+    at PlaywrightServer.setTimeout (C:\Users\nikol\AppData\Roaming\Python\Python313\site-packages\Browser\wrapper\index.js:13372:57)
+    at Object.onReceiveHalfClose (C:\Users\nikol\AppData\Roaming\Python\Python313\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1461:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\nikol\AppData\Roaming\Python\Python313\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:575:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\nikol\AppData\Roaming\Python\Python313\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:615:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\nikol\AppData\Roaming\Python\Python313\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:382:18)
+    at ServerHttp2Stream.emit (node:events:531:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+=============================================================
+{"level":30,"time":"2025-09-17T03:37:36.943Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-09-17T03:37:36.943Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-09-17T03:37:36.950Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-09-17T03:37:36.950Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-09-17T03:37:36.953Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2025-09-17T03:37:37.211Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"Adding browser to stack: chromium, version: 140.0.7339.16"}
+{"level":30,"time":"2025-09-17T03:37:37.211Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"End of node method newBrowser"}
+{"level":30,"time":"2025-09-17T03:37:37.211Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2025-09-17T03:37:37.216Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"Start of node method newContext"}
+{"level":30,"time":"2025-09-17T03:37:37.216Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"Creating new context with options: {\"acceptDownloads\":true,\"bypassCSP\":false,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":false,\"javaScriptEnabled\":true,\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"viewport\":{\"height\":720,\"width\":1280}}"}
+{"level":30,"time":"2025-09-17T03:37:37.216Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@670b56acdad6d18a54ab2cd18155d7e9\"},\"headless\":false,\"_contextStack\":[],\"id\":\"browser=ad2f8e15-91ad-407e-aa54-68f507be3261\"}"}
+{"level":30,"time":"2025-09-17T03:37:37.216Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"Trace file: "}
+{"level":30,"time":"2025-09-17T03:37:37.222Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"Setting default timeout for context context=e789f63d-3d42-4cf2-b396-680947705723 to 10000"}
+{"level":30,"time":"2025-09-17T03:37:37.222Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"End of node method newContext"}
+{"level":30,"time":"2025-09-17T03:37:37.222Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"Changed active context: context=e789f63d-3d42-4cf2-b396-680947705723"}
+{"level":30,"time":"2025-09-17T03:37:37.225Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-09-17T03:37:37.226Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@670b56acdad6d18a54ab2cd18155d7e9\"},\"headless\":false,\"_contextStack\":[{\"id\":\"context=e789f63d-3d42-4cf2-b396-680947705723\",\"c\":{\"_type\":\"BrowserContext\",\"_guid\":\"browser-context@fd194d7ed5e1b921ede001a9bbb332b3\"},\"pageStack\":[],\"options\":{\"acceptDownloads\":true,\"bypassCSP\":false,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":false,\"javaScriptEnabled\":true,\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"viewport\":{\"height\":720,\"width\":1280}},\"traceFile\":\"\"}],\"id\":\"browser=ad2f8e15-91ad-407e-aa54-68f507be3261\"}"}
+{"level":30,"time":"2025-09-17T03:37:37.375Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"Video path: undefined"}
+{"level":30,"time":"2025-09-17T03:37:37.375Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"Changed active page"}
+{"level":30,"time":"2025-09-17T03:37:41.638Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"End of node method newPage"}
+{"level":30,"time":"2025-09-17T03:37:41.643Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-09-17T03:37:41.646Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-09-17T03:37:41.650Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-09-17T03:37:41.651Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-09-17T03:37:41.655Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-09-17T03:37:41.656Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-09-17T03:37:41.659Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-09-17T03:37:41.661Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-09-17T03:37:41.662Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-09-17T03:37:41.663Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-09-17T03:37:41.665Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-09-17T03:37:41.666Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-09-17T03:37:41.667Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"Changed active context: context=e789f63d-3d42-4cf2-b396-680947705723"}
+{"level":30,"time":"2025-09-17T03:37:41.668Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"Changing current active page: page=caab17d1-f919-4522-b1e9-1809b219e9b0"}
+{"level":30,"time":"2025-09-17T03:37:41.668Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"Changed active page"}
+{"level":30,"time":"2025-09-17T03:37:41.670Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"Start of node method closeContext"}
+{"level":30,"time":"2025-09-17T03:37:41.683Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"Removed page=a97f2cbd-60d5-4988-bf8d-e716b23260a2 from context=e789f63d-3d42-4cf2-b396-680947705723 page stack"}
+{"level":30,"time":"2025-09-17T03:37:41.699Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"End of node method closeContext"}
+{"level":30,"time":"2025-09-17T03:37:41.726Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2025-09-17T03:37:42.524Z","pid":49208,"hostname":"Dell-G15-de-Nik","msg":"End of node method closeAllBrowsers"}
