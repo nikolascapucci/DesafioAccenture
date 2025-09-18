@@ -1,6 +1,8 @@
-# demoqa-robot-browser
+# Projeto de Desafio Técnico
 
 Projeto de automação usando **Robot Framework** com **Selenium** para executar os cenários do site https://demoqa.com/.
+
+nota: as outras ramificações/branches são projetos abandonados ou ainda em progresso. o que vale é a branch main
 
 ## O que contém
 - Testes `.robot` cobrindo 5 etapas (ProgressBar, Browser Windows, Sortable, WebTables e Practice Form)
