@@ -21,6 +21,7 @@ Projeto de automação usando **Robot Framework** com **Selenium** para executar
 ## Instalação local
 ```bash
 pip install -r requirements.txt
+````
 
 Segue os meus contatos:
 Nikolas Capucci Rosa Alvarenga
