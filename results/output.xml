@@ -1,184 +1,284 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3.2 (Python 3.13.7 on win32)" generated="2025-09-18T00:23:07.104695" rpa="false" schemaversion="5">
+<robot generator="Robot 7.3.2 (Python 3.13.7 on win32)" generated="2025-09-18T00:30:03.005272" rpa="false" schemaversion="5">
 <suite id="s1" name="DesafioAccenture" source="C:\Users\nikol\OneDrive\Documentos\Repositórios\DesafioAccenture">
 <suite id="s1-s1" name="Tests" source="C:\Users\nikol\OneDrive\Documentos\Repositórios\DesafioAccenture\tests">
-<suite id="s1-s1-s1" name="Stage4 WebTables" source="C:\Users\nikol\OneDrive\Documentos\Repositórios\DesafioAccenture\tests\Stage4_WebTables.robot">
+<suite id="s1-s1-s1" name="Stage5 PracticeForm" source="C:\Users\nikol\OneDrive\Documentos\Repositórios\DesafioAccenture\tests\Stage5_PracticeForm.robot">
 <kw name="Open DemoQA" owner="Common" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-09-18T00:23:07.450083" level="INFO">Opening browser 'chrome' to base url 'https://demoqa.com'.</msg>
+<msg time="2025-09-18T00:30:03.395619" level="INFO">Opening browser 'chrome' to base url 'https://demoqa.com'.</msg>
 <arg>${BASE_URL}${path}</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-09-18T00:23:07.449639" elapsed="6.301284"/>
+<status status="PASS" start="2025-09-18T00:30:03.395178" elapsed="7.599061"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-09-18T00:23:13.751368" elapsed="0.055842"/>
+<status status="PASS" start="2025-09-18T00:30:10.994778" elapsed="0.087949"/>
 </kw>
-<status status="PASS" start="2025-09-18T00:23:07.448524" elapsed="6.359021"/>
+<status status="PASS" start="2025-09-18T00:30:03.394093" elapsed="7.689073"/>
 </kw>
-<test id="s1-s1-s1-t1" name="Etapa 4 - CRUD na Web Table" line="12">
+<test id="s1-s1-s1-t1" name="Etapa 5 - Formulário" line="9">
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2025-09-18T00:23:13.812481" level="INFO">Opening url 'https://demoqa.com'</msg>
+<msg time="2025-09-18T00:30:11.092153" level="INFO">Opening url 'https://demoqa.com'</msg>
 <arg>${BASE_URL}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2025-09-18T00:23:13.811670" elapsed="0.743729"/>
+<status status="PASS" start="2025-09-18T00:30:11.091003" elapsed="0.753973"/>
 </kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${FORMS_MENU}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-09-18T00:30:11.845602" elapsed="0.322789"/>
+</kw>
+<kw name="Wait For Element And Click" owner="Common">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${ELEMENTS_CARD}</arg>
-<arg>10s</arg>
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-09-18T00:23:14.558102" elapsed="0.049135"/>
+<status status="PASS" start="2025-09-18T00:30:12.169579" elapsed="0.039556"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-09-18T00:23:14.608258" level="INFO">Clicking element 'xpath=//div[@class="card-body"]/h5[normalize-space(.)="Elements"]/ancestor::div[contains(@class,"card")]'.</msg>
-<arg>${ELEMENTS_CARD}</arg>
+<msg time="2025-09-18T00:30:12.210164" level="INFO">Clicking element 'xpath=//*[contains(text(),"Forms")]'.</msg>
+<arg>${locator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-18T00:23:14.607828" elapsed="0.208572"/>
+<status status="PASS" start="2025-09-18T00:30:12.209446" elapsed="0.195354"/>
 </kw>
-<kw name="Run Keyword And Return Status" owner="BuiltIn">
-<kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2025-09-18T00:23:14.970720" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-105.png"&gt;&lt;img src="selenium-screenshot-105.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2025-09-18T00:23:14.971052" level="FAIL">Element with locator 'xpath=//*[contains(text(),"Web Tables")]/ancestor::li[contains(@class,"element-group")]' not found.</msg>
-<arg>${WEBTABLES_MENU}</arg>
-<doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="FAIL" start="2025-09-18T00:23:14.817774" elapsed="0.169981">Element with locator 'xpath=//*[contains(text(),"Web Tables")]/ancestor::li[contains(@class,"element-group")]' not found.</status>
+<arg>${FORMS_MENU}</arg>
+<status status="PASS" start="2025-09-18T00:30:12.169090" elapsed="0.235963"/>
 </kw>
-<msg time="2025-09-18T00:23:14.988148" level="INFO">${expanded} = False</msg>
-<var>${expanded}</var>
-<arg>Element Should Be Visible</arg>
-<arg>${WEBTABLES_MENU}</arg>
-<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2025-09-18T00:23:14.817140" elapsed="0.171310"/>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${PRACTICE_FORM}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-09-18T00:30:12.405410" elapsed="0.315692"/>
 </kw>
-<if>
-<branch type="IF" condition="'${expanded}' == 'False'">
+<kw name="Wait For Element And Click" owner="Common">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-09-18T00:30:12.723322" elapsed="0.053149"/>
+</kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-09-18T00:23:14.991491" level="INFO">Clicking element 'xpath=//div[@class="card-body"]/h5[normalize-space(.)="Elements"]/ancestor::div[contains(@class,"card")]'.</msg>
-<msg time="2025-09-18T00:23:15.185319" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-106.png"&gt;&lt;img src="selenium-screenshot-106.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2025-09-18T00:23:15.185707" level="FAIL">Element with locator 'xpath=//div[@class="card-body"]/h5[normalize-space(.)="Elements"]/ancestor::div[contains(@class,"card")]' not found.</msg>
-<arg>${ELEMENTS_CARD}</arg>
+<msg time="2025-09-18T00:30:12.778008" level="INFO">Clicking element 'xpath=//*[contains(text(),"Practice Form")]'.</msg>
+<arg>${locator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="FAIL" start="2025-09-18T00:23:14.991036" elapsed="0.205588">Element with locator 'xpath=//div[@class="card-body"]/h5[normalize-space(.)="Elements"]/ancestor::div[contains(@class,"card")]' not found.</status>
+<status status="PASS" start="2025-09-18T00:30:12.776918" elapsed="0.287687"/>
+</kw>
+<arg>${PRACTICE_FORM}</arg>
+<status status="PASS" start="2025-09-18T00:30:12.722053" elapsed="0.342694"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-18T00:30:13.065549" level="INFO">Typing text 'TestFirst' into text field 'css=input#firstName'.</msg>
+<arg>${FIRSTNAME_INPUT}</arg>
+<arg>TestFirst</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-18T00:30:13.065131" elapsed="0.240264"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-18T00:30:13.306121" level="INFO">Typing text 'TestLast' into text field 'css=input#lastName'.</msg>
+<arg>${LASTNAME_INPUT}</arg>
+<arg>TestLast</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-18T00:30:13.305698" elapsed="0.165706"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-18T00:30:13.472172" level="INFO">Typing text 'test@mail.com' into text field 'css=input#userEmail'.</msg>
+<arg>${EMAIL_INPUT}</arg>
+<arg>test@mail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-18T00:30:13.471739" elapsed="0.184693"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-09-18T00:30:13.657498" level="INFO">Clicking element 'xpath=//label[text()="Male"]'.</msg>
+<arg>xpath=//label[text()="Male"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-18T00:30:13.656860" elapsed="0.116714"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-18T00:30:13.774458" level="INFO">Typing text '9999999999' into text field 'css=input#userNumber'.</msg>
+<arg>${MOBILE_INPUT}</arg>
+<arg>9999999999</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-18T00:30:13.773997" elapsed="0.206761"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-09-18T00:30:13.981468" level="INFO">Clicking element 'css=input#dateOfBirthInput'.</msg>
+<arg>${DOB_INPUT}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-18T00:30:13.981068" elapsed="0.196044"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2025-09-18T00:30:14.178167" level="INFO">Sending key(s) ('CTRL+A',) to css=input#dateOfBirthInput element.</msg>
+<msg time="2025-09-18T00:30:14.494773" level="INFO">Pressing special key CONTROL down.</msg>
+<msg time="2025-09-18T00:30:14.495093" level="INFO">Sending key A</msg>
+<msg time="2025-09-18T00:30:14.495288" level="INFO">Releasing special key CONTROL.</msg>
+<arg>${DOB_INPUT}</arg>
+<arg>CTRL+A</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2025-09-18T00:30:14.177445" elapsed="0.341941"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-18T00:30:14.520181" level="INFO">Typing text '10 Sep 1990' into text field 'css=input#dateOfBirthInput'.</msg>
+<arg>${DOB_INPUT}</arg>
+<arg>10 Sep 1990</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-18T00:30:14.519722" elapsed="0.203221"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2025-09-18T00:30:14.724152" level="INFO">Sending key(s) ('ENTER',) to css=input#dateOfBirthInput element.</msg>
+<msg time="2025-09-18T00:30:15.039996" level="INFO">Pressing special key ENTER to element.</msg>
+<msg time="2025-09-18T00:30:15.040238" level="INFO">Releasing special key ENTER.</msg>
+<arg>${DOB_INPUT}</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2025-09-18T00:30:14.723624" elapsed="0.342579"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-18T00:30:15.067232" level="INFO">Typing text 'Math' into text field 'css=input#subjectsInput'.</msg>
+<arg>${SUBJECTS_INPUT}</arg>
+<arg>Math</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-18T00:30:15.066607" elapsed="0.158692"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2025-09-18T00:30:15.226626" level="INFO">Sending key(s) ('ENTER',) to css=input#subjectsInput element.</msg>
+<msg time="2025-09-18T00:30:15.678805" level="INFO">Pressing special key ENTER to element.</msg>
+<msg time="2025-09-18T00:30:15.678980" level="INFO">Releasing special key ENTER.</msg>
+<arg>${SUBJECTS_INPUT}</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2025-09-18T00:30:15.225722" elapsed="0.486006"/>
+</kw>
+<kw name="Join Path" owner="OperatingSystem">
+<msg time="2025-09-18T00:30:15.712918" level="INFO">${file} = C:\Users\nikol\OneDrive\Documentos\Repositórios\DesafioAccenture\upload_files\sample_upload.txt</msg>
+<var>${file}</var>
+<arg>C:\\Users\\nikol\\OneDrive\\Documentos\\Repositórios\\DesafioAccenture\\tests</arg>
+<arg>..</arg>
+<arg>upload_files</arg>
+<arg>sample_upload.txt</arg>
+<doc>Joins the given path part(s) to the given base path.</doc>
+<status status="PASS" start="2025-09-18T00:30:15.712328" elapsed="0.000712"/>
+</kw>
+<kw name="Choose File" owner="SeleniumLibrary">
+<msg time="2025-09-18T00:30:15.713954" level="INFO">Sending C:\Users\nikol\OneDrive\Documentos\Repositórios\DesafioAccenture\upload_files\sample_upload.txt to browser.</msg>
+<arg>${UPLOAD_INPUT}</arg>
+<arg>${file}</arg>
+<doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
+<status status="PASS" start="2025-09-18T00:30:15.713586" elapsed="0.063380"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-18T00:30:15.777965" level="INFO">Typing text 'Rua Exemplo 123' into text field 'css=textarea#currentAddress'.</msg>
+<arg>${ADDRESS_TEXTAREA}</arg>
+<arg>Rua Exemplo 123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-18T00:30:15.777511" elapsed="0.271576"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2025-09-18T00:30:16.049983" level="INFO">Sending key(s) ('PAGE_DOWN',) to page.</msg>
+<msg time="2025-09-18T00:30:16.050621" level="INFO">Pressing special key PAGE_DOWN to browser.</msg>
+<msg time="2025-09-18T00:30:16.050888" level="INFO">Releasing special key PAGE_DOWN.</msg>
+<arg>None</arg>
+<arg>PAGE_DOWN</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2025-09-18T00:30:16.049447" elapsed="0.017970"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-18T00:30:17.071127" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-18T00:30:16.069872" elapsed="1.001787"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-09-18T00:30:17.073790" level="INFO">Clicking element 'xpath=//div[@id="state"]'.</msg>
+<arg>xpath=//div[@id="state"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-18T00:30:17.072842" elapsed="0.198902"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-18T00:30:17.274134" level="INFO">Typing text 'Haryana' into text field 'id:react-select-3-input'.</msg>
+<arg>id:react-select-3-input</arg>
+<arg>Haryana</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-18T00:30:17.272720" elapsed="0.159244"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2025-09-18T00:30:17.433238" level="INFO">Sending key(s) ('ENTER',) to id:react-select-3-input element.</msg>
+<msg time="2025-09-18T00:30:17.736602" level="INFO">Pressing special key ENTER to element.</msg>
+<msg time="2025-09-18T00:30:17.736877" level="INFO">Releasing special key ENTER.</msg>
+<arg>id:react-select-3-input</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2025-09-18T00:30:17.432407" elapsed="0.335759"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-09-18T00:30:17.769703" level="INFO">Clicking element 'xpath=//div[@id="city"]'.</msg>
+<arg>xpath=//div[@id="city"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-18T00:30:17.768849" elapsed="0.163036"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-18T00:30:17.933114" level="INFO">Typing text 'Karnal' into text field 'id:react-select-4-input'.</msg>
+<arg>id:react-select-4-input</arg>
+<arg>Karnal</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-18T00:30:17.932467" elapsed="0.148876"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2025-09-18T00:30:18.082567" level="INFO">Sending key(s) ('ENTER',) to id:react-select-4-input element.</msg>
+<msg time="2025-09-18T00:30:18.393369" level="INFO">Pressing special key ENTER to element.</msg>
+<msg time="2025-09-18T00:30:18.393864" level="INFO">Releasing special key ENTER.</msg>
+<arg>id:react-select-4-input</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2025-09-18T00:30:18.081777" elapsed="0.345931"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-09-18T00:30:18.429037" level="INFO">Clicking element 'css=#submit'.</msg>
+<arg>${SUBMIT_FORM_BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-18T00:30:18.428273" elapsed="0.280109"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${WEBTABLES_MENU}</arg>
+<arg>${MODAL_DIALOG}</arg>
 <arg>5s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="NOT RUN" start="2025-09-18T00:23:15.196878" elapsed="0.000330"/>
-</kw>
-<status status="FAIL" start="2025-09-18T00:23:14.990457" elapsed="0.206907">Element with locator 'xpath=//div[@class="card-body"]/h5[normalize-space(.)="Elements"]/ancestor::div[contains(@class,"card")]' not found.</status>
-</branch>
-<status status="FAIL" start="2025-09-18T00:23:14.990370" elapsed="0.207078">Element with locator 'xpath=//div[@class="card-body"]/h5[normalize-space(.)="Elements"]/ancestor::div[contains(@class,"card")]' not found.</status>
-</if>
-<kw name="Click Element" owner="SeleniumLibrary">
-<arg>${WEBTABLES_MENU}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2025-09-18T00:23:15.198354" elapsed="0.000335"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${ADD_BUTTON}</arg>
-<arg>10s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="NOT RUN" start="2025-09-18T00:23:15.199034" elapsed="0.000354"/>
+<status status="PASS" start="2025-09-18T00:30:18.709222" elapsed="0.064351"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<arg>${ADD_BUTTON}</arg>
+<msg time="2025-09-18T00:30:18.776283" level="INFO">Clicking element 'css=#closeLargeModal'.</msg>
+<arg>${MODAL_CLOSE_BTN}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2025-09-18T00:23:15.199799" elapsed="0.000326"/>
+<status status="PASS" start="2025-09-18T00:30:18.774637" elapsed="0.166951"/>
 </kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<arg>${FIRST_NAME}</arg>
-<arg>${FIRST}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" start="2025-09-18T00:23:15.200472" elapsed="0.000407"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<arg>${LAST_NAME}</arg>
-<arg>${LAST}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" start="2025-09-18T00:23:15.201628" elapsed="0.000645"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<arg>${AGE}</arg>
-<arg>30</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" start="2025-09-18T00:23:15.202748" elapsed="0.000316"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<arg>${EMAIL}</arg>
-<arg>test@example.com</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" start="2025-09-18T00:23:15.203352" elapsed="0.000291"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<arg>${SALARY}</arg>
-<arg>2000</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" start="2025-09-18T00:23:15.203940" elapsed="0.000311"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<arg>${DEPARTMENT}</arg>
-<arg>QA</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" start="2025-09-18T00:23:15.204545" elapsed="0.000331"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<arg>${SUBMIT_BUTTON}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2025-09-18T00:23:15.205164" elapsed="0.000293"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<arg>xpath=//div[text()="${FIRST}"]/ancestor::div[contains(@class,'rt-tr-group')]//span[@title='Edit']</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2025-09-18T00:23:15.205724" elapsed="0.000275"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<arg>${SALARY}</arg>
-<arg>5000</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" start="2025-09-18T00:23:15.206265" elapsed="0.000279"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<arg>${SUBMIT_BUTTON}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2025-09-18T00:23:15.207155" elapsed="0.000374"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<arg>xpath=//div[text()="${FIRST}"]/ancestor::div[contains(@class,'rt-tr-group')]//span[@title='Delete']</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2025-09-18T00:23:15.207869" elapsed="0.000334"/>
-</kw>
-<status status="FAIL" start="2025-09-18T00:23:13.807762" elapsed="1.400834">Element with locator 'xpath=//div[@class="card-body"]/h5[normalize-space(.)="Elements"]/ancestor::div[contains(@class,"card")]' not found.</status>
+<status status="PASS" start="2025-09-18T00:30:11.083493" elapsed="7.858662"/>
 </test>
 <kw name="Close Browser Safe" owner="Common" type="TEARDOWN">
 <kw name="Run Keyword And Ignore Error" owner="BuiltIn">
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-09-18T00:23:15.246550" elapsed="2.223030"/>
+<status status="PASS" start="2025-09-18T00:30:18.950089" elapsed="2.381082"/>
 </kw>
 <arg>Close Browser</arg>
 <doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
-<status status="PASS" start="2025-09-18T00:23:15.245961" elapsed="2.223772"/>
+<status status="PASS" start="2025-09-18T00:30:18.949393" elapsed="2.382019"/>
 </kw>
-<status status="PASS" start="2025-09-18T00:23:15.244665" elapsed="2.225165"/>
+<status status="PASS" start="2025-09-18T00:30:18.948510" elapsed="2.383074"/>
 </kw>
-<status status="FAIL" start="2025-09-18T00:23:07.150312" elapsed="10.319574"/>
+<status status="PASS" start="2025-09-18T00:30:03.047623" elapsed="18.284072"/>
 </suite>
-<status status="FAIL" start="2025-09-18T00:23:07.135915" elapsed="10.340202"/>
+<status status="PASS" start="2025-09-18T00:30:03.037660" elapsed="18.300927"/>
 </suite>
-<status status="FAIL" start="2025-09-18T00:23:07.112066" elapsed="10.376624"/>
+<status status="PASS" start="2025-09-18T00:30:03.010364" elapsed="18.333836"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="DesafioAccenture" id="s1" pass="0" fail="1" skip="0">DesafioAccenture</stat>
-<stat name="Tests" id="s1-s1" pass="0" fail="1" skip="0">DesafioAccenture.Tests</stat>
-<stat name="Stage4 WebTables" id="s1-s1-s1" pass="0" fail="1" skip="0">DesafioAccenture.Tests.Stage4 WebTables</stat>
+<stat name="DesafioAccenture" id="s1" pass="1" fail="0" skip="0">DesafioAccenture</stat>
+<stat name="Tests" id="s1-s1" pass="1" fail="0" skip="0">DesafioAccenture.Tests</stat>
+<stat name="Stage5 PracticeForm" id="s1-s1-s1" pass="1" fail="0" skip="0">DesafioAccenture.Tests.Stage5 PracticeForm</stat>
 </suite>
 </statistics>
 <errors>
