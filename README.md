@@ -6,7 +6,6 @@ Projeto de automação usando **Robot Framework** com **Selenium** para executar
 - Testes `.robot` cobrindo 5 etapas (ProgressBar, Browser Windows, Sortable, WebTables e Practice Form)
 - Recursos em `resources/` (locators e keywords comuns)
 - Arquivo de suporte para upload: `upload_files/sample_upload.txt`
-- Workflow GitHub Actions para rodar os testes em CI
 
 ## Pré-requisitos (local)
 - Python 3.10+
@@ -22,3 +21,9 @@ Projeto de automação usando **Robot Framework** com **Selenium** para executar
 ## Instalação local
 ```bash
 pip install -r requirements.txt
+
+Segue os meus contatos:
+Nikolas Capucci Rosa Alvarenga
++55 12 997113051
+https://www.linkedin.com/in/nikolascapucci
+nikolas.capucci@hotmail.com
